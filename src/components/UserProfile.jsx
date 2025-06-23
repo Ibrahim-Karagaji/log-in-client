@@ -1,5 +1,5 @@
 import { useContext, useState, useRef, useEffect } from "react";
-import { UserContext } from "../stateManagement/userState";
+import { UserContext } from "../stateManagement/UserState";
 import updateService from "../services/updateService";
 import Loading from "./Loading";
 

@@ -1,5 +1,5 @@
 import { Navigate, useNavigate } from "react-router-dom";
-import { UserContext } from "../stateManagement/userState";
+import { UserContext } from "../stateManagement/UserState";
 import { useEffect, useContext, useState, useRef } from "react";
 import getUserDataService from "../services/getUserDataService";
 import Loading from "./Loading";

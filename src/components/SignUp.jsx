@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useRef, useContext } from "react";
 import Loading from "./Loading";
-import { UserContext } from "../stateManagement/userState";
+import { UserContext } from "../stateManagement/UserState";
 import signupService from "../services/signupService";
 import { useNavigate } from "react-router-dom";
 
