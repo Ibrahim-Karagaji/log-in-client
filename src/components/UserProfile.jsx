@@ -70,7 +70,7 @@ export default function UserProfile() {
         LOG OUT
       </button>
       <img
-        src="public/avatar.png"
+        src="/avatar.png"
         className="!max-w-[150px] !max-h-[150px] !ml-full"
       />
       <div className="grid gap-1">
