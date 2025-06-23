@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingElement {
+  width: 60px !important;
+  height: 60px;
+  border: 6px solid #e0e0e0;
+  border-top: 6px solid #2d11b7;
+  border-left: 6px solid #2d11b7;
+  border-right: 6px solid #2d11b7;
+  border-radius: 50%;
+  animation: load 1s linear infinite;
+}
+
+* {
+  max-width: 1366px;
+  width: 100% !important;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 27px;
+}
+
+input::placeholder {
+  color: #2d11b7;
+  font-size: 16px;
+}
+
+input {
+  accent-color: #2d11b7;
+}
+
+@media (max-width: 750px) {
+  .sign {
+    flex-direction: column-reverse;
+  }
+  .welcome {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  input::placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .app {
+    padding: 5px;
+  }
+}
